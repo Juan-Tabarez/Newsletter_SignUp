@@ -1,3 +1,4 @@
+require("dotenv").config();
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 const bodyParser = require("body-parser");
 const express = require("express");
@@ -17,7 +18,7 @@ app.get("/", function(req, res){
 });
 
 mailchimp.setConfig({
-    apiKey: "04499f277c5a9114e407b9ffc1e26fec-us9",
+    apiKey: process.env.MAILCHIMP_API_KEY,
 
     server: "us9"
 })
@@ -68,9 +69,3 @@ app.post("/failure", function(req, res){
 app.listen(process.env.PORT || 3000, function(){
     console.log("Server is running on port 3000")
 });
-
-//API Key
-//04499f277c5a9114e407b9ffc1e26fec-us9  
-
-//List ID
-//fc3dc7fa34
