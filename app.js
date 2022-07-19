@@ -17,7 +17,7 @@ app.get("/", function(req, res){
 });
 
 mailchimp.setConfig({
-    apiKey: "3b08aea58a5d9c4b1031e8e42eec3879-us9",
+    apiKey: "04499f277c5a9114e407b9ffc1e26fec-us9",
 
     server: "us9"
 })
@@ -70,7 +70,7 @@ app.listen(process.env.PORT || 3000, function(){
 });
 
 //API Key
-//3b08aea58a5d9c4b1031e8e42eec3879-us9    
+//04499f277c5a9114e407b9ffc1e26fec-us9  
 
 //List ID
 //fc3dc7fa34
